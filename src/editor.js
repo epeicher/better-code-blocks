@@ -67,7 +67,7 @@ const Edit = ( props ) => {
 						__next40pxDefaultSize
 					/>
 					<ToggleControl
-						label={ __( 'Show copy button', 'better-code-blocks' ) }
+						label={ __( 'Show a copy button', 'better-code-blocks' ) }
 						checked={ hasCopy }
 						onChange={ ( value ) =>
 							setAttributes( { hasCopy: value } )
