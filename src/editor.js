@@ -76,7 +76,7 @@ const Edit = ( props ) => {
 					/>
 					<ToggleControl
 						label={ __(
-							'Show line numbers',
+							'Show the line numbers',
 							'better-code-blocks'
 						) }
 						checked={ hasLineNumbers }
