@@ -86,7 +86,7 @@ const Edit = ( props ) => {
 						__nextHasNoMarginBottom
 					/>
 					<ToggleControl
-						label={ __( 'Limit height of block', 'better-code-blocks' ) }
+						label={ __( 'Limit height of code block', 'better-code-blocks' ) }
 						checked={ hasMaxHeight }
 						onChange={ ( value ) => setAttributes( { hasMaxHeight: value } ) }
 						__nextHasNoMarginBottom
