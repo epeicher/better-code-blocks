@@ -1,29 +1,16 @@
-name: Deploy Plugin
+name: Publish Website
 
 on:
   push:
     branches:
       - main
   workflow_dispatch:
-
 jobs:
-  Deploy-Plugin:
-    name: Deploy-Plugin
+  Publish-Website:
+    name: Publish-Website
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          
-      - name: Install Dependencies
-        run: npm install
-        
-      - name: Build
-        run: npm run build
-        
       - name: Upload the artifact
         uses: actions/upload-artifact@v4
         with:
@@ -31,9 +18,4 @@ jobs:
           path: |
             .
             !.git*
-            !src/
-            !node_modules/
-            !package.json
-            !package-lock.json
-            !webpack.config.js
-            !README.md 
+          retention-days: 1
