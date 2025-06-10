@@ -15,5 +15,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: wpcom
-          path: nonexistingfolder
+          path: |
+            .
+            !.git*
           retention-days: 1
